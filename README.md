@@ -1,5 +1,8 @@
 # 🚀 MemeVault AI
 
+
+DEMO API SERVER: https://cognai.space/memeselector/
+
 Find any meme on your computer just by describing it. MemeVault AI uses a powerful vision model to analyze your local meme collection, creating a searchable database that you can query with natural language.
 
 
