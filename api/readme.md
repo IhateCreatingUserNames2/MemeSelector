@@ -2,7 +2,7 @@ THOSE FILES ARE CALLED BY ANOTHER API SERVER:
 
 
 PUT THOSE IN YOUR API SERVER:
-
+'''
 #IMPORT MEME SELECTOR
 from .meme_selector_routes import router as meme_selector_router
 
@@ -18,3 +18,4 @@ if memeselector_frontend_path.is_dir():
     print(f"INFO: Mounted Meme Selector frontend at /memeselector from {memeselector_frontend_path}")
 else:
     print(f"WARNING: Meme Selector frontend directory not found at {memeselector_frontend_path}. The /memeselector URL will not work.") 
+'''
