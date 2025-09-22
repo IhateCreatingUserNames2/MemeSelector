@@ -6,6 +6,13 @@ DEMO API SERVER: https://cognai.space/memeselector/
 Find any meme on your computer just by describing it. MemeVault AI uses a powerful vision model to analyze your local meme collection, creating a searchable database that you can query with natural language.
 
 
+API SERVER:
+<img width="802" height="852" alt="image" src="https://github.com/user-attachments/assets/63d4ab20-24b2-47bb-8c3d-db864f138266" />
+
+
+LOCAL SERVER:
+<img width="700" height="553" alt="image" src="https://github.com/user-attachments/assets/5f632c8f-5464-435d-afa8-1f65d62578c6" />
+
 *(This is a sample image. You can replace it with a screenshot of your own running app!)*
 
 ---
