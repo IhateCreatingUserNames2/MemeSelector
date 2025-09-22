@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemeVault AI (Local Privacy Edition)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>MemeVault AI (Local Privacy Edition)</h1>
+        <p class="subtitle">Your memes are processed in your browser and your index is saved on your computer. Nothing is stored on the server.</p>
+
+        <div class="card">
+            <h2>Step 1: Index a New Folder</h2>
+            <p>Only do this for folders you haven't indexed before. This will create an `index.json` file for you to save.</p>
+            <label for="folder-input-index" class="button-like">Select Folder to Index</label>
+            <input type="file" id="folder-input-index" webkitdirectory directory multiple style="display:none;">
+            <div id="index-status" class="status"></div>
+            <button id="download-index-btn" class="secondary-btn" style="display:none;">Download index.json</button>
+        </div>
+
+        <div class="card">
+            <h2>Step 2: Start a Search Session</h2>
+            <div class="session-setup">
+                <div class="setup-step">
+                    <p><strong>A. Load your saved `index.json` file.</strong></p>
+                    <label for="index-upload-input" class="button-like secondary-btn">Load index.json</label>
+                    <input type="file" id="index-upload-input" accept=".json" style="display:none;">
+                </div>
+                <div class="setup-step">
+                    <p><strong>B. Select the matching local meme folder.</strong></p>
+                    <label for="folder-input-search" class="button-like secondary-btn">Select Meme Folder</label>
+                    <input type="file" id="folder-input-search" webkitdirectory directory multiple style="display:none;">
+                </div>
+            </div>
+            <div id="session-status" class="status"></div>
+            <hr>
+            <input type="text" id="search-input" placeholder="Describe the meme..." disabled>
+            <button id="search-btn" disabled>Search</button>
+            <div id="search-status" class="status"></div>
+        </div>
+
+        <div id="results-gallery" class="gallery"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
